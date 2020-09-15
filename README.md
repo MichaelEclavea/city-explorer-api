@@ -47,3 +47,50 @@ Start time: 6:45pm
 Finish time: 7:30pm
 
 Actual time needed to complete: 45min
+
+
+
+Lab:07 - repository
+
+Number and name of feature: 1 Data Formatting.
+
+Estimate of time needed to complete: 1hr
+
+Start time: 1:35
+
+Finish time: 
+
+Actual time needed to complete: _____
+
+
+Number and name of feature: 2. Locations:
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+
+Number and name of feature: 3. Weather.
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+
+Number and name of feature: 4. Trails.
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
