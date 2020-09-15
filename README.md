@@ -19,18 +19,18 @@ Estimate of time needed to complete: 2hrs
 
 Start time: 2:30
 
-Finish time: _____
+Finish time: 4:00
 
-Actual time needed to complete: _____
-
-
+Actual time needed to complete: 1:30
 
 
-Number and name of feature: 
 
-Estimate of time needed to complete: _____
 
-Start time: _____
+Number and name of feature: 3
+
+Estimate of time needed to complete: 2hrs
+
+Start time: 4:07pm
 
 Finish time: _____
 
