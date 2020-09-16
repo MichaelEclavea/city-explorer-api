@@ -1,5 +1,5 @@
 # city_explorer_api
-lab-06-repository
+<!-- lab-06-repository -->
 
 
 Number and name of feature: 1 -setup
@@ -50,7 +50,9 @@ Actual time needed to complete: 45min
 
 
 
-Lab:07 - repository
+
+
+<!-- Lab:07 - repository -->
 
 Number and name of feature: 1 Data Formatting.
 
@@ -58,39 +60,39 @@ Estimate of time needed to complete: 1hr
 
 Start time: 1:35
 
-Finish time: 
+Finish time: 2pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 25mn
 
 
 Number and name of feature: 2. Locations:
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2hrs
 
-Start time: _____
+Start time: 2:05pm
 
-Finish time: _____
+Finish time: 3:48pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr & 43min
 
 
 Number and name of feature: 3. Weather.
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1hr
 
-Start time: _____
+Start time: 3:50pm
 
-Finish time: _____
+Finish time: 4:45pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr & 35min
 
 
 Number and name of feature: 4. Trails.
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2hrs
 
-Start time: _____
+Start time: 4:45pm
 
-Finish time: _____
+Finish time: 6:25
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr & 40min
