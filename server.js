@@ -30,6 +30,7 @@ app.get('/trails', hikingHandler);
 // constructor functions
 
 function Location(city, locationData) {
+    console.log(locationData)
     this.search_query = city;
     this.formatted_query = locationData.display_name;
     this.latitude = locationData.lat;
@@ -74,14 +75,11 @@ function handleGetLocation(req, res) {
         // if
         .then(dishes => {
           let data = dishes.body[0];
-          let location = {
-            latitude: data.lat,
-            longitude: data.lon,
-            name: data.display_name
-          };
+          console.log(data);
+          let location = new Location(req.query.city, data);
           // Store in the DB, please, not memory
           // INSERT
-          locations[req.query.city] = location;
+        //   locations[req.query.city] = location;
           res.status(200).json(location);
         })
         // else
