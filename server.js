@@ -1,19 +1,19 @@
 'use strict';
 
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
 const pg = require('pg');
-const client = new pg.Client();
+const client = new pg.Client(process.env.DATABASE_URL);
+client.on('error', (err) =>console.error(err));
 const superagent = require('superagent');
+
 
 let locations = [];
 
-const {
-    response
-} = require('express');
+
 app.use(cors());
-require('dotenv').config();
 const PORT = process.env.PORT;
 
 app.get('/', function (request, response) {
