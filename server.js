@@ -53,7 +53,6 @@ function Trail(object) {
 
 // Handler Functions
 
-
 function weatherHandler(request, response) {
     const city = request.query.search_query;
     const sql = `SELECT * FROM weather WHERE search_query=$1;`;
@@ -124,7 +123,7 @@ function handleGetLocation(request, response) {
     const city = request.query.city;
 
     //do we have this city in the database?
-    const sql = `SELECT * FROM citydata WHERE search_query=$1;`;
+    const sql = `SELECT * FROM city_data WHERE search_query=$1;`;
     const safeValues = [city];
 
     client.query(sql, safeValues)
@@ -150,7 +149,7 @@ function handleGetLocation(request, response) {
                         console.log(data.body);
                         const place = new Location(city, data.body[0]);
                         console.log(city, place.formatted_query, place.latitude, place.longitude);
-                        const sql = 'INSERT INTO citydata (search_query, formatted_search_query, latitude, longitude) VALUES ($1, $2, $3, $4);';
+                        const sql = 'INSERT INTO city_data (search_query, formatted_search_query, latitude, longitude) VALUES ($1, $2, $3, $4);';
                         const safeValues = [city, place.formatted_query, place.latitude, place.longitude];
 
                         console.log(safeValues)

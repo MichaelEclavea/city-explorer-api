@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS city_data;
-DROP TABLE IF EXISTS weather_data;
+DROP TABLE IF EXISTS weather;
 
 CREATE TABLE city_data (
     id SERIAL PRIMARY KEY,
@@ -13,7 +13,7 @@ INSERT INTO city_data (search_query) VALUES ('tokyo');
 
 SELECT * FROM city_data;
 
-CREATE TABLE weather_data(
+CREATE TABLE weather(
     id SERIAL PRIMARY KEY, 
     search_query VARCHAR(255),
     forecast VARCHAR(255),
@@ -22,4 +22,4 @@ CREATE TABLE weather_data(
 
 );
 
-SELECT * FROM weather_data;
+SELECT * FROM weather;
