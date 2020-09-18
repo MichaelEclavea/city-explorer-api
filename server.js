@@ -9,6 +9,7 @@ const superagent = require('superagent');
 let pg = require('pg');
 const client = new pg.Client(process.env.DATABASE_URL);
 
+
 //Application Setup
 const PORT = process.env.PORT;
 const app = express();
@@ -16,11 +17,13 @@ app.use(cors());
 const dataBaseUrl = process.env.DATABASE_URL;
 let locations = [];
 
+
 //Routes
 app.get('/location', handleGetLocation);
 app.get('/weather', weatherHandler);
 app.get('/trails', trailHandler);
 app.use('*', notFound);
+
 
 // constructor functions
 function Location(city, data) {
@@ -109,6 +112,11 @@ function weatherHandler(request, response) {
             }
         })
 }
+
+function notFound(request, response) {
+    response.status(404).send('Sorry, Not Found');
+}
+
 
 function notFound(request, response) {
     response.status(404).send('Sorry, Not Found');

@@ -13,7 +13,8 @@ INSERT INTO city_data (search_query) VALUES ('tokyo');
 
 SELECT * FROM city_data;
 
-CREATE TABLE weather_data (
+
+CREATE TABLE weather_data(
     id SERIAL PRIMARY KEY, 
     search_query VARCHAR(255),
     forecast VARCHAR(255),
