@@ -53,7 +53,6 @@ function Trail(object) {
 
 // Handler Functions
 
-
 function weatherHandler(request, response) {
     const city = request.query.search_query;
     const sql = `SELECT * FROM weather WHERE search_query=$1;`;
@@ -118,6 +117,10 @@ function notFound(request, response) {
     response.status(404).send('Sorry, Not Found');
 }
 
+
+function notFound(request, response) {
+    response.status(404).send('Sorry, Not Found');
+}
 
 
 function handleGetLocation(request, response) {
